@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/IndianaTijuca/static/css/main.5f25822a.css",
+    "main.js": "/IndianaTijuca/static/js/main.212921fc.js",
+    "static/media/footerimg.jfif": "/IndianaTijuca/static/media/footerimg.b614671a0655e9647e68.jfif",
+    "index.html": "/IndianaTijuca/index.html",
+    "main.5f25822a.css.map": "/IndianaTijuca/static/css/main.5f25822a.css.map",
+    "main.212921fc.js.map": "/IndianaTijuca/static/js/main.212921fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f25822a.css",
+    "static/js/main.212921fc.js"
+  ]
+}
