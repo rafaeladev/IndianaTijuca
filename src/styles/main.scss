@@ -7,5 +7,14 @@
 @import './base/base';
 @import './base/typography';
 
+/*Import layout CSS*/
+@import './layout/nav';
+@import './layout/header';
+@import './layout/footer';
+
+/*Import pages CSS*/
+@import './pages/home';
+
 /*Import components CSS*/
 @import './components/animations';
+@import './components/button';

@@ -2,7 +2,6 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 import Footer from './Footer.jsx';
-import Nav from './Nav.jsx';
 import Header from './Header.jsx';
 
 const Layout = () => {

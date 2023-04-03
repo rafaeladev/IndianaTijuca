@@ -1,0 +1,14 @@
+.yearsButton {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid $color-piment;
+    color: $color-piment;
+    padding: 5px 25px;
+    margin-inline: 10px;
+    margin-block: 30px;
+}
+
+.yearsButton:hover {
+    background-color: $color-piment;
+    color: white;
+}

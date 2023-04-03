@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__link {
+        padding-inline: 10px;
+        &__active {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+    & button {
+        background-color: $color-salmon;
+    }
+    &__lang {
+        margin-left: 40px;
+    }
+}
+
+.selectBox {
+    background-color: $color-salmon;
+    border: none;
+    font-size: 1rem;
+}

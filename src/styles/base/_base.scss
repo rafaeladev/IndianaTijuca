@@ -10,7 +10,7 @@ html {
 
 body {
     background: $color-white;
-    max-width: 1440px;
+    //max-width: 1440px;
     margin: 0 auto;
     padding: 0;
     font-size: 18px;
@@ -28,6 +28,17 @@ li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: $font-2;
+    font-size: 1rem;
+    border: none;
+}
+
 nav {
     background-color: $color-salmon;
 }
@@ -36,6 +47,20 @@ header {
     background-color: $color-salmon;
     display: flex;
     justify-content: space-between;
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+    //background-color: $color-salmon;
+    // position: relative;
+    // top: 0%;
+    //position: absolute;
+}
+
+section {
+    width: 100%;
 }
 
 footer {
@@ -47,13 +72,10 @@ footer {
     margin-top: auto;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid $color-salmon;
 }
 
 .site-wrapper {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
     margin-block: auto;
 }
