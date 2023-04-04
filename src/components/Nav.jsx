@@ -1,12 +1,13 @@
 import React from 'react';
-// import { useContext } from 'react';
+
 import { NavLink } from 'react-router-dom';
-// import { LngContext } from '../utils/context.jsx';
+
 import ChangeLanguage from './ChangeLanguage.jsx';
+import { useContext } from 'react';
+import { LngContext } from '../utils/context.jsx';
 
 const Nav = () => {
-    // const { language, changeLanguage } = useContext(LngContext);
-
+    const { language } = useContext(LngContext);
     return (
         <nav className='nav'>
             <ul>
@@ -17,19 +18,26 @@ const Nav = () => {
                     <li className='nav__link'>Home</li>
                 </NavLink>
                 <NavLink
-                    to='/natal:id'
+                    to='/natal/2022'
                     className={({ isActive }) => (isActive ? 'nav__link__active' : '')}
                 >
                     <li className='nav__link'>Natal 2022</li>
                 </NavLink>
                 <NavLink
-                    to='/historico'
+                    to='natal'
+                    end
                     className={({ isActive }) => (isActive ? 'nav__link__active' : '')}
                 >
-                    <li className='nav__link'>Historico</li>
+                    <li className='nav__link'>
+                        {language === 'BR'
+                            ? 'Arquivos'
+                            : language === 'FR'
+                            ? 'Archives'
+                            : 'Arquives'}
+                    </li>
                 </NavLink>
                 <NavLink
-                    to='/infos'
+                    to='infos'
                     className={({ isActive }) => (isActive ? 'nav__link__active' : '')}
                 >
                     <li className='nav__link'>Infos</li>

@@ -14,7 +14,7 @@ export const ThemeProvider = ({ children }) => {
 export const LngContext = createContext();
 
 export const LngProvider = ({ children }) => {
-    const [language, setLanguage] = useState('PT');
+    const [language, setLanguage] = useState('BR');
     function selectLanguage(event) {
         setLanguage(event.target.value);
     }

@@ -20,9 +20,9 @@ const ChangeLanguage = () => {
             >
                 <option
                     className='optionsMenu'
-                    value='PT'
+                    value='BR'
                 >
-                    PT
+                    BR
                 </option>
                 <option
                     className='optionsMenu'

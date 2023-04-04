@@ -37,6 +37,7 @@ button {
     font-family: $font-2;
     font-size: 1rem;
     border: none;
+    color: $color-salmon;
 }
 
 nav {
@@ -50,22 +51,26 @@ header {
 }
 
 main {
-    max-width: 1440px;
-    margin: auto;
+    margin-inline: auto;
     padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     //background-color: $color-salmon;
-    // position: relative;
-    // top: 0%;
+    //position: relative;
+    // top: 20%;
     //position: absolute;
 }
 
 section {
+    max-width: 1440px;
     width: 100%;
+    padding-inline: $layout-padding;
 }
 
 footer {
-    color: #aaaaaa;
-    display: flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
@@ -73,9 +78,18 @@ footer {
     display: flex;
     flex-direction: column;
     border-top: 1px solid $color-salmon;
+    width: 100%;
+    // height: 2.5rem;
 }
 
 .site-wrapper {
     min-height: 100vh;
     margin-block: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+select {
+    padding-block: 0px;
 }

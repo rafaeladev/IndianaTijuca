@@ -14,12 +14,13 @@ import photoCard4 from '../assets/natal2019/portrait_22.jpg';
 import contentData from '../home.json';
 
 import { LngContext } from '../utils/context.jsx';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-    const { language, selectLanguage } = useContext(LngContext);
+    const { language } = useContext(LngContext);
     const years = [2018, 2019, 2022];
     const yearsSize = years.length;
-    const { content, subtitles, name, pic } = contentData.find((data) => data.title === language);
+    const { content, subtitles, name } = contentData.find((data) => data.title === language);
 
     const yearsButtons = years.map((year) => {
         return (
@@ -27,7 +28,9 @@ const Home = () => {
                 key={year}
                 className='yearsButton'
             >
-                {name} {year}
+                <Link to={`natal/${year}`}>
+                    {name} {year}
+                </Link>
             </button>
         );
     });
@@ -43,10 +46,6 @@ const Home = () => {
             </section>
             <section className='homeContent'>
                 <div className='homeContent__text'>
-                    <img
-                        src={pic}
-                        alt='flag'
-                    />
                     <p>{content}</p>
                 </div>
                 <div className='homeContent__actions'>
@@ -54,7 +53,9 @@ const Home = () => {
                     {yearsButtons}
                     <h2>{subtitles.action}</h2>
                     <button className='yearsButton'>
-                        {name} {years[yearsSize - 1]}
+                        <Link to={`natal/${years[yearsSize - 1]}`}>
+                            {name} {years[yearsSize - 1]}
+                        </Link>
                     </button>
                 </div>
             </section>

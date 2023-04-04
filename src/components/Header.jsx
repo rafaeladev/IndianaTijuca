@@ -14,6 +14,7 @@ const Header = () => {
                         alt='logo'
                     />
                 </Link>
+
                 <p>Natal Indiana Tijuca</p>
             </div>
             <Nav />
