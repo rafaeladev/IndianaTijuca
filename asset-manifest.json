@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/IndianaTijuca/static/css/main.d8c9aa2d.css",
-    "main.js": "/IndianaTijuca/static/js/main.590810f9.js",
+    "main.css": "/IndianaTijuca/static/css/main.e694372d.css",
+    "main.js": "/IndianaTijuca/static/js/main.25872faa.js",
+    "static/media/image_maria.png": "/IndianaTijuca/static/media/image_maria.f49e4141c52c394267b9.png",
+    "static/media/portrait_3.jpg": "/IndianaTijuca/static/media/portrait_3.bd39b5215b64cc52bf96.jpg",
+    "static/media/gateau_1.jpg": "/IndianaTijuca/static/media/gateau_1.c4a911ab4ba130667824.jpg",
     "static/media/banner-site-5.jpg": "/IndianaTijuca/static/media/banner-site-5.a77f49802d9cccaefdbd.jpg",
+    "static/media/back2.png": "/IndianaTijuca/static/media/back2.9b753e7cf4359f929b92.png",
     "static/media/portrait_17.jpg": "/IndianaTijuca/static/media/portrait_17.94920d6ca15d47948aeb.jpg",
     "static/media/portrait_22.jpg": "/IndianaTijuca/static/media/portrait_22.5c411b8ad9371974bfd3.jpg",
+    "static/media/1909247___o.jpg": "/IndianaTijuca/static/media/1909247_1406553006342188_6888766473033194079_o.3db23e48db7bd95bfa2d.jpg",
     "static/media/portrait_16.jpg": "/IndianaTijuca/static/media/portrait_16.cedc895cea787c387908.jpg",
     "static/media/portrait_1.jpg": "/IndianaTijuca/static/media/portrait_1.d7ea8f201d14d3397989.jpg",
+    "static/media/profile.jpg": "/IndianaTijuca/static/media/profile.254e219e1c5290f82910.jpg",
+    "static/media/SEEMORE.png": "/IndianaTijuca/static/media/SEEMORE.5e14e630c2bc5f05513e.png",
     "static/media/footerimg.jfif": "/IndianaTijuca/static/media/footerimg.b614671a0655e9647e68.jfif",
     "index.html": "/IndianaTijuca/index.html",
-    "main.d8c9aa2d.css.map": "/IndianaTijuca/static/css/main.d8c9aa2d.css.map",
-    "main.590810f9.js.map": "/IndianaTijuca/static/js/main.590810f9.js.map"
+    "main.e694372d.css.map": "/IndianaTijuca/static/css/main.e694372d.css.map",
+    "main.25872faa.js.map": "/IndianaTijuca/static/js/main.25872faa.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8c9aa2d.css",
-    "static/js/main.590810f9.js"
+    "static/css/main.e694372d.css",
+    "static/js/main.25872faa.js"
   ]
 }
