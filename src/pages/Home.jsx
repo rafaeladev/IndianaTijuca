@@ -37,7 +37,10 @@ const Home = () => {
 
     return (
         <div className='home'>
-            <Banner img={hommebanner} />
+            <Banner
+                img={hommebanner}
+                page={'home'}
+            />
             <section className='photoCardList'>
                 <PhotoCard img={photoCard1} />
                 <PhotoCard img={photoCard2} />

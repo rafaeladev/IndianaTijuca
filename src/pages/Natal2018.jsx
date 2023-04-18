@@ -1,31 +1,55 @@
 import React from 'react';
-import PhotoGallery from '../components/PhotoGallery.jsx';
 import { nanoid } from 'nanoid';
+import { getPhotos } from '../apiGoogle.js';
+import { useLoaderData } from 'react-router-dom';
+
+// import getData from '../apiGoogle.js';
+// import GetDataAPI from '../api.js';
+
+export function loader() {
+    return getPhotos('Natal2018');
+}
 
 const Natal2018 = () => {
-    const vertical = [
-        '/natal2018/portrait_1.jpg',
-        '../assets/natal2018/portrait_2.jpg',
-        '../assets/natal2018/portrait_3.jpg',
-        '../assets/natal2018/portrait_4.jpg',
-        '../assets/natal2018/portrait_5.jpg',
-    ];
-    const horizontal = [
-        '/natal2018/gateau_1.jpg',
-        'natal2018/gateau_2.jpg',
-        '../assets/natal2018/gateau_3.jpg',
-        '../assets/natal2018/gateau_4.jpg',
-        '../assets/natal2018/gateau_5.jpg',
-    ];
+    const photos = useLoaderData();
+
+    const photosDisplay = photos.map((photo) => {
+        return photo.direction === 'horizontal' ? (
+            <div
+                key={nanoid()}
+                className={`photoGallery__big`}
+            >
+                <img
+                    key={nanoid()}
+                    src={photo.url}
+                    alt={`${photo.id}`}
+                    className='galleryImg'
+                />
+            </div>
+        ) : (
+            <div
+                key={nanoid()}
+                className={'photoGallery__vertical'}
+            >
+                <img
+                    key={nanoid()}
+                    src={photo.url}
+                    alt={`${photo.id}`}
+                    className='galleryImg'
+                />
+            </div>
+        );
+    });
+
+    // for (let i = 0; i < photos.length - 1; i++) {
+    //     newArray = [...newArray, i * Math.random()];
+    // }
+
+    // console.log(newArray);
     return (
         <>
             <h1>2018</h1>
-            <div className='horizontal'>
-                <img
-                    src={`/IndianaTijuca/static/media/${horizontal[1]}`}
-                    alt='2018'
-                />
-            </div>
+            <div className='container'>{photosDisplay}</div>
         </>
     );
 };

@@ -1,34 +1,38 @@
 import React from 'react';
-import { nanoid } from 'nanoid';
-import image from '../assets/natal2018/gateau_1.jpg';
+import { Link } from 'react-router-dom';
 
 const PhotoGallery = (props) => {
-    const vertical = [
-        '../assets/natal2018/portrait_1.jpg',
-        '../assets/natal2018/portrait_2.jpg',
-        '../assets/natal2018/portrait_3.jpg',
-        '../assets/natal2018/portrait_4.jpg',
-        '../assets/natal2018/portrait_5.jpg',
-    ];
-    const horizontal = [
-        '../assets/natal2018/gateau_1.jpg',
-        '../assets/natal2018/gateau_2.jpg',
-        '../assets/natal2018/gateau_3.jpg',
-        '../assets/natal2018/gateau_4.jpg',
-        '../assets/natal2018/gateau_5.jpg',
-    ];
-    const horizontalImages = props.horizontal.map((data) => (
-        <div
-            key={nanoid()}
-            className='horizontal'
-        >
-            <img
-                src={data}
-                alt='natal 2018'
-            />
-        </div>
-    ));
-    return <div className='photogallery'>{horizontal}</div>;
+    return props.data.map((photo) => {
+        return photo.direction === 'horizontal' ? (
+            <div
+                key={photo.index}
+                className={`photoGallery__big`}
+            >
+                <Link to={'.'}>
+                    <img
+                        key={photo.index}
+                        src={photo.url}
+                        alt={`${photo.id}`}
+                        className='galleryImg'
+                    />
+                </Link>
+            </div>
+        ) : (
+            <div
+                key={photo.index}
+                className={'photoGallery__vertical'}
+            >
+                <Link to={'.'}>
+                    <img
+                        key={photo.index}
+                        src={photo.url}
+                        alt={`${photo.id}`}
+                        className='galleryImg'
+                    />
+                </Link>
+            </div>
+        );
+    });
 };
 
 export default PhotoGallery;

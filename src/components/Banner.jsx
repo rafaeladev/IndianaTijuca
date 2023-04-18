@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Banner = (props) => {
-    const hommeBanner = {
+    const styleBanner = {
         fontWeight: 'bold',
         textDecoration: 'underline',
         color: '#161616',
@@ -12,9 +12,25 @@ const Banner = (props) => {
         width: '100%',
         gridColumn: '1 / -1',
     };
+    const homeBanner = {
+        fontWeight: 'bold',
+        textDecoration: 'underline',
+        color: '#161616',
+        backgroundImage: `url(${props.img})`,
+        backgroundPosition: 'center center',
+        backgroundSize: 'cover',
+        height: '500px',
+        width: '100%',
+        maxWidth: '1500px',
+        gridColumn: '1 / -1',
+    };
+    let classStyle = styleBanner;
+    if (props.page === 'home') {
+        classStyle = homeBanner;
+    }
     return (
         <>
-            <div style={hommeBanner}></div>
+            <div style={classStyle}></div>
         </>
     );
 };
