@@ -10,37 +10,39 @@ const Nav = () => {
     const { language } = useContext(LngContext);
     return (
         <nav className='nav'>
-            <ul>
+            <ul className='nav__link'>
                 <NavLink
                     to='/'
-                    className={({ isActive }) => (isActive ? 'nav__link__active' : '')}
+                    className={({ isActive }) =>
+                        isActive ? 'nav__link__item nav__link__active' : 'nav__link__item'
+                    }
                 >
-                    <li className='nav__link'>Home</li>
+                    Home
                 </NavLink>
                 <NavLink
                     to='/natal/2022'
-                    className={({ isActive }) => (isActive ? 'nav__link__active' : '')}
+                    className={({ isActive }) =>
+                        isActive ? 'nav__link__item nav__link__active' : 'nav__link__item'
+                    }
                 >
-                    <li className='nav__link'>Natal 2022</li>
+                    Natal 2022
                 </NavLink>
                 <NavLink
                     to='natal'
                     end
-                    className={({ isActive }) => (isActive ? 'nav__link__active' : '')}
+                    className={({ isActive }) =>
+                        isActive ? 'nav__link__item nav__link__active' : 'nav__link__item'
+                    }
                 >
-                    <li className='nav__link'>
-                        {language === 'BR'
-                            ? 'Arquivos'
-                            : language === 'FR'
-                            ? 'Archives'
-                            : 'Arquives'}
-                    </li>
+                    {language === 'BR' ? 'Arquivos' : language === 'FR' ? 'Archives' : 'Arquives'}
                 </NavLink>
                 <NavLink
                     to='infos'
-                    className={({ isActive }) => (isActive ? 'nav__link__active' : '')}
+                    className={({ isActive }) =>
+                        isActive ? 'nav__link__item nav__link__active' : 'nav__link__item'
+                    }
                 >
-                    <li className='nav__link'>Infos</li>
+                    Infos
                 </NavLink>
             </ul>
             <ul className='nav__lang'>

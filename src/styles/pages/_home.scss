@@ -33,6 +33,10 @@
         grid-template-columns: $layout-padding 1fr 0.5fr 0.5fr 0.5fr $layout-padding;
         grid-template-rows: 1fr 1fr;
         align-items: center;
+        & a {
+            margin: auto;
+            align-items: center;
+        }
         & h2 {
             justify-self: end;
             padding-inline: 40px;

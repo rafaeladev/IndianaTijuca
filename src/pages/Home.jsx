@@ -24,14 +24,14 @@ const Home = () => {
 
     const yearsButtons = years.map((year) => {
         return (
-            <button
-                key={year}
-                className='yearsButton'
-            >
-                <Link to={`natal/${year}`}>
+            <Link to={`natal/${year}`}>
+                <button
+                    key={year}
+                    className='yearsButton'
+                >
                     {name} {year}
-                </Link>
-            </button>
+                </button>
+            </Link>
         );
     });
 
@@ -55,11 +55,11 @@ const Home = () => {
                     <h2>{subtitles.history}</h2>
                     {yearsButtons}
                     <h2>{subtitles.action}</h2>
-                    <button className='yearsButton'>
-                        <Link to={`natal/${years[yearsSize - 1]}`}>
+                    <Link to={`natal/${years[yearsSize - 1]}`}>
+                        <button className='buttonNow'>
                             {name} {years[yearsSize - 1]}
-                        </Link>
-                    </button>
+                        </button>
+                    </Link>
                 </div>
             </section>
         </div>

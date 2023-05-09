@@ -8,7 +8,7 @@ import Banner from '../components/Banner.jsx';
 
 import pic2018 from '../assets/natal2018/portrait_3.jpg';
 import pic2019 from '../assets/natal2019/portrait_22.jpg';
-import pic2022 from '../assets/natal2019/portrait_22.jpg';
+import pic2022 from '../assets/natal2022/PXL_20221222_180722198.jpg';
 
 const Historico = () => {
     const { language } = useContext(LngContext);

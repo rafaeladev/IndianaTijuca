@@ -1,55 +1,21 @@
 import React from 'react';
-import { nanoid } from 'nanoid';
-import { getPhotos } from '../apiGoogle.js';
-import { useLoaderData } from 'react-router-dom';
+import PhotoGallery from '../components/PhotoGallery.jsx';
+import { useFetch } from '../apiGoogle.js';
 
 // import getData from '../apiGoogle.js';
 // import GetDataAPI from '../api.js';
 
-export function loader() {
-    return getPhotos('Natal2018');
-}
-
 const Natal2018 = () => {
-    const photos = useLoaderData();
-
-    const photosDisplay = photos.map((photo) => {
-        return photo.direction === 'horizontal' ? (
-            <div
-                key={nanoid()}
-                className={`photoGallery__big`}
-            >
-                <img
-                    key={nanoid()}
-                    src={photo.url}
-                    alt={`${photo.id}`}
-                    className='galleryImg'
-                />
-            </div>
-        ) : (
-            <div
-                key={nanoid()}
-                className={'photoGallery__vertical'}
-            >
-                <img
-                    key={nanoid()}
-                    src={photo.url}
-                    alt={`${photo.id}`}
-                    className='galleryImg'
-                />
-            </div>
-        );
-    });
-
-    // for (let i = 0; i < photos.length - 1; i++) {
-    //     newArray = [...newArray, i * Math.random()];
-    // }
-
-    // console.log(newArray);
+    const { isLoading, data, error } = useFetch('Natal2018');
+    if (error) {
+        return <span>Oups il y a eu un problème</span>;
+    }
     return (
         <>
-            <h1>2018</h1>
-            <div className='container'>{photosDisplay}</div>
+            <h1>Natal 2018</h1>
+            <div className='container'>
+                {isLoading ? <div className='loader'></div> : <PhotoGallery data={data} />}
+            </div>
         </>
     );
 };

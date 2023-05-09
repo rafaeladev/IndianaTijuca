@@ -1,25 +1,21 @@
 import React from 'react';
-import { Loader } from '../components/Loader.jsx';
 import PhotoGallery from '../components/PhotoGallery.jsx';
-import { nanoid } from 'nanoid';
-import getData, { useFetch } from '../apiGoogle.js';
-import { Link } from 'react-router-dom';
+import { useFetch } from '../apiGoogle.js';
 
 const Natal2022 = () => {
     const { isLoading, data, error } = useFetch('Natal2022');
-
+    if (error) {
+        return <span>Oups il y a eu un problème</span>;
+    }
     return (
         <>
             <h1>Natal 2022</h1>
             <div className='container'>
-                {isLoading ? (
-                    <div>
-                        <Loader />
-                        <h2>Data is loading</h2>
-                    </div>
-                ) : (
-                    <PhotoGallery data={data} />
-                )}
+                {isLoading ? <div className='loader'></div> : <PhotoGallery data={data} />}
+                <img
+                    src='http://jlmsscf.cluster030.hosting.ovh.net/indianatijuca/Natal2022/PXL_20221222_180336256.jpg'
+                    alt='children'
+                />
             </div>
         </>
     );
