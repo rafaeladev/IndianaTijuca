@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/IndianaTijuca/static/css/main.1f145345.css",
-    "main.js": "/IndianaTijuca/static/js/main.84e567af.js",
+    "main.css": "/IndianaTijuca/static/css/main.a1fc4869.css",
+    "main.js": "/IndianaTijuca/static/js/main.69870302.js",
+    "static/media/PXL_20221222_180722198.jpg": "/IndianaTijuca/static/media/PXL_20221222_180722198.ce5cc92f37a9460e7de4.jpg",
     "static/media/image_maria.png": "/IndianaTijuca/static/media/image_maria.f49e4141c52c394267b9.png",
     "static/media/portrait_3.jpg": "/IndianaTijuca/static/media/portrait_3.bd39b5215b64cc52bf96.jpg",
     "static/media/banner-site-5.jpg": "/IndianaTijuca/static/media/banner-site-5.a77f49802d9cccaefdbd.jpg",
@@ -15,11 +16,11 @@
     "static/media/SEEMORE.png": "/IndianaTijuca/static/media/SEEMORE.5e14e630c2bc5f05513e.png",
     "static/media/footerimg.jfif": "/IndianaTijuca/static/media/footerimg.b614671a0655e9647e68.jfif",
     "index.html": "/IndianaTijuca/index.html",
-    "main.1f145345.css.map": "/IndianaTijuca/static/css/main.1f145345.css.map",
-    "main.84e567af.js.map": "/IndianaTijuca/static/js/main.84e567af.js.map"
+    "main.a1fc4869.css.map": "/IndianaTijuca/static/css/main.a1fc4869.css.map",
+    "main.69870302.js.map": "/IndianaTijuca/static/js/main.69870302.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f145345.css",
-    "static/js/main.84e567af.js"
+    "static/css/main.a1fc4869.css",
+    "static/js/main.69870302.js"
   ]
 }
