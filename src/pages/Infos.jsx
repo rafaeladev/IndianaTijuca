@@ -7,6 +7,9 @@ import profilepic from '../assets/profile.jpg';
 import pic1 from '../assets/logo1.png';
 import pic2 from '../assets/image_maria.png';
 import pic3 from '../assets/1909247_1406553006342188_6888766473033194079_o.jpg';
+import pic4 from '../assets/image-maps.png';
+import pic5 from '../assets/image-favela.png';
+import pic6 from '../assets/image-favela2.png';
 
 import aboutData from '../about.json';
 import Banner from '../components/Banner.jsx';
@@ -59,6 +62,39 @@ const About = () => {
             <section className='infos'>
                 <h2>{section3.subtitle}</h2>
                 <p>{section3.content}</p>
+                <div className='infosImgFlex'>
+                    <img
+                        src={pic4}
+                        alt='favela maps'
+                    />
+
+                    <div className='legende'>
+                        Photo by{' '}
+                        <a href='http://nephu.sites.uff.br/programa/mapeando-conflitos/mapeando-comunidades/comunidades-do-rio-de-janeiro/indiana/'>
+                            nephu uff
+                        </a>
+                    </div>
+                    <div className='infosImgParallel'>
+                        <div className='infosImg'>
+                            <img
+                                src={pic5}
+                                alt='favela maps'
+                            />
+                            <div className='legende'>
+                                Photo by <a href='https://rioonwatch.org.br/?p=10238'>rioonwatch</a>
+                            </div>
+                        </div>
+                        <div className='infosImg'>
+                            <img
+                                src={pic6}
+                                alt='favela maps'
+                            />
+                            <div className='legende'>
+                                Photo by <a href='https://rioonwatch.org.br/?p=10238'>rioonwatch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section className='infos'>
                 <h2>{section4.subtitle}</h2>

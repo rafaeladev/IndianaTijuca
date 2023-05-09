@@ -14,7 +14,14 @@ const Natal2018 = () => {
         <>
             <h1>Natal 2018</h1>
             <div className='container'>
-                {isLoading ? <div className='loader'></div> : <PhotoGallery data={data} />}
+                {isLoading ? (
+                    <div className='loader'></div>
+                ) : (
+                    <PhotoGallery
+                        data={data}
+                        year={2018}
+                    />
+                )}
             </div>
         </>
     );

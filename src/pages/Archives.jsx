@@ -29,9 +29,9 @@ const Historico = () => {
                             minWidth: '350px',
                         }}
                     ></div>
-                    <button className='yearsButton'>
-                        <Link to={'2018'}>{name} 2018</Link>
-                    </button>
+                    <Link to={'2018'}>
+                        <button className='yearsButton'>{name} 2018</button>
+                    </Link>
                 </div>
                 <div className='card-item'>
                     <div
@@ -42,10 +42,9 @@ const Historico = () => {
                             minWidth: '350px',
                         }}
                     ></div>
-
-                    <button className='yearsButton'>
-                        <Link to={'2019'}>{name} 2019</Link>
-                    </button>
+                    <Link to={'2019'}>
+                        <button className='yearsButton'>{name} 2019</button>
+                    </Link>
                 </div>
                 <div className='card-item'>
                     <div
@@ -56,9 +55,9 @@ const Historico = () => {
                             minWidth: '350px',
                         }}
                     ></div>
-                    <button className='yearsButton'>
-                        <Link to={'2022'}>{name} 2022</Link>
-                    </button>
+                    <Link to={'2022'}>
+                        <button className='yearsButton'>{name} 2022</button>
+                    </Link>
                 </div>
             </section>
         </>

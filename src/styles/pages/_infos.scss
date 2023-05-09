@@ -32,3 +32,34 @@
     padding-inline: $layout-padding;
     text-align: center;
 }
+
+.legende {
+    font-size: 0.7rem;
+    & a {
+        font-size: 0.7rem;
+        color: $color-piment;
+    }
+}
+
+.infosImgParallel {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.infosImg {
+    margin-top: 20px;
+    width: 45%;
+    & img {
+        width: 100%;
+    }
+}
+
+.infosImgFlex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    & img {
+        margin-top: 20px;
+    }
+}

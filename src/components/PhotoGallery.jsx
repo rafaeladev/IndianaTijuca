@@ -12,7 +12,7 @@ const PhotoGallery = (props) => {
             >
                 <img
                     src={photo.url}
-                    alt={`${photo.id}`}
+                    alt={`http://jlmsscf.cluster030.hosting.ovh.net/indianatijuca/natal${props.year}/${photo.name}.jpg`}
                     className='galleryImg'
                 />
             </Link>
@@ -23,7 +23,7 @@ const PhotoGallery = (props) => {
                 className={'photoGallery__vertical'}
             >
                 <img
-                    src={photo.url}
+                    src={`http://jlmsscf.cluster030.hosting.ovh.net/indianatijuca/natal${props.year}/${photo.name}.jpg`}
                     alt={`${photo.id}`}
                     className='galleryImg'
                 />
