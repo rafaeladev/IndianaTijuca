@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/IndianaTijuca/static/css/main.a1fc4869.css",
-    "main.js": "/IndianaTijuca/static/js/main.225dbc39.js",
+    "main.css": "/IndianaTijuca/static/css/main.786a275b.css",
+    "main.js": "/IndianaTijuca/static/js/main.257c05d1.js",
     "static/media/PXL_20221222_180722198.jpg": "/IndianaTijuca/static/media/PXL_20221222_180722198.ce5cc92f37a9460e7de4.jpg",
     "static/media/image_maria.png": "/IndianaTijuca/static/media/image_maria.f49e4141c52c394267b9.png",
+    "static/media/image-maps.png": "/IndianaTijuca/static/media/image-maps.c98576213f1b42965fc2.png",
+    "static/media/image-favela2.png": "/IndianaTijuca/static/media/image-favela2.05e2cf88d5c29734c194.png",
+    "static/media/image-favela.png": "/IndianaTijuca/static/media/image-favela.5e8401e7795f526112b6.png",
     "static/media/portrait_3.jpg": "/IndianaTijuca/static/media/portrait_3.bd39b5215b64cc52bf96.jpg",
     "static/media/banner-site-5.jpg": "/IndianaTijuca/static/media/banner-site-5.a77f49802d9cccaefdbd.jpg",
     "static/media/back2.png": "/IndianaTijuca/static/media/back2.9b753e7cf4359f929b92.png",
@@ -16,11 +19,11 @@
     "static/media/SEEMORE.png": "/IndianaTijuca/static/media/SEEMORE.5e14e630c2bc5f05513e.png",
     "static/media/footerimg.jfif": "/IndianaTijuca/static/media/footerimg.b614671a0655e9647e68.jfif",
     "index.html": "/IndianaTijuca/index.html",
-    "main.a1fc4869.css.map": "/IndianaTijuca/static/css/main.a1fc4869.css.map",
-    "main.225dbc39.js.map": "/IndianaTijuca/static/js/main.225dbc39.js.map"
+    "main.786a275b.css.map": "/IndianaTijuca/static/css/main.786a275b.css.map",
+    "main.257c05d1.js.map": "/IndianaTijuca/static/js/main.257c05d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1fc4869.css",
-    "static/js/main.225dbc39.js"
+    "static/css/main.786a275b.css",
+    "static/js/main.257c05d1.js"
   ]
 }
