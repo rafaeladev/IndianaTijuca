@@ -12,11 +12,11 @@ const Natal2022 = () => {
             <h1>Natal 2022</h1>
             <div className='container'>
                 {isLoading ? <div className='loader'></div> : <PhotoGallery data={data} />}
-                <img
-                    src='http://jlmsscf.cluster030.hosting.ovh.net/indianatijuca/Natal2022/PXL_20221222_180336256.jpg'
-                    alt='children'
-                />
             </div>
+            <img
+                src='http://jlmsscf.cluster030.hosting.ovh.net/indianatijuca/Natal2022/PXL_20221222_180336256.jpg'
+                alt='children'
+            />
         </>
     );
 };
